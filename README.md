@@ -32,7 +32,7 @@ Para iniciar la aplicación en modo de desarrollo, usa el siguiente comando:
 
 `npm run start`
 
-Esto abrirá la aplicación en [http://localhost:3000]
+Esto abrirá la aplicación en [http://localhost:3000](http://localhost:3000)
 
 Para construir la aplicación para producción, ejecuta:
 
@@ -46,33 +46,32 @@ Para ejecutar los test de la aplicación puedes utilizar:
 
 El proyecto sigue la estructura estándar de una aplicación creada con create-react-app. A continuación se describe la organización principal de carpetas y archivos dentro del directorio src:
 
-assets/:
-    img/:
-
-components/: 
-    CharacterCard/
-    CharacterInfo/
-    CharacterList/
-    ComicList/
-    FavoriteButton/
-    FavoriteIcon/
-    Header/
-    Layout/: 
-    LoadingSpinner/: 
-    ResultsDisplay/
-    SearchBar/
-    context/: 
-        FavoritesContext.js
-hooks/: 
-    useCharacterDetails.js
-    useCharacters.js
-pages/:
-    CharacterDetailsPage.js
-    CharacterListPage.js
-services/: 
-    api.js
-styles/: 
-    main.css
+├───assets
+│   └───img
+├───components
+│   ├───CharacterCard
+│   ├───CharacterInfo
+│   ├───CharacterList
+│   ├───ComicsList
+│   ├───FavoriteButton
+│   ├───FavoriteIcon
+│   ├───Header
+│   ├───Layout
+│   ├───LoadingSpinner
+│   ├───ResultsDisplay
+│   └───SearchBar
+├───context
+│   └───FavoritesProvider
+├───hooks
+│   └───useCharacterDetails
+│   └───useCharacters
+├───pages
+│   └───CharacterDetailPage
+│   └───CharacterListPage
+├───services
+│   └───api
+├───styles
+│   └───main.css
 
 # Dependencias
 
