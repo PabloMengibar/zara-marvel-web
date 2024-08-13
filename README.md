@@ -45,7 +45,7 @@ Para ejecutar los test de la aplicación puedes utilizar:
 # Arquitectura y Estructura del Proyecto
 
 El proyecto sigue la estructura estándar de una aplicación creada con create-react-app. A continuación se describe la organización principal de carpetas y archivos dentro del directorio src:
-
+```
 ├───assets
 │   └───img
 ├───components
@@ -72,7 +72,7 @@ El proyecto sigue la estructura estándar de una aplicación creada con create-r
 │   └───api
 ├───styles
 │   └───main.css
-
+```
 # Dependencias
 
 Las principales dependencias utilizadas en este proyecto son:
