@@ -38,6 +38,10 @@ Para construir la aplicación para producción, ejecuta:
 
 `npm run build`
 
+La versión de producción de esta aplicación está construida y desplegada en Netlify, puedes visitar la aplicación en funcionamiento en la siguiente URL:
+
+[https://zara-marvel.netlify.app/](https://zara-marvel.netlify.app/)
+
 Para ejecutar los test de la aplicación puedes utilizar:
 
 `npm run test`
@@ -95,6 +99,8 @@ Debido a la naturaleza del proyecto, he dejado un archivo [.env.example] en la r
 Para utilizar estas variables, simplemente copia el archivo .env.example, renómbralo a .env, y las claves se cargarán automáticamente en tu entorno de desarrollo.
 
 Nota: Ten en cuenta que, al ser una clave abierta y compartida, es posible que las peticiones a la API de Marvel estén limitadas o agotadas debido a un uso excesivo. Se recomienda generar y utilizar una clave API personal para evitar estas limitaciones.
+
+
 
 # Advertencia
 Importante: En las últimas semanas, varios usuarios han reportado en diferentes foros que la API de Marvel está funcionando de manera extremadamente lenta. Esto puede afectar significativamente los tiempos de carga y la experiencia de usuario en la aplicación.
