@@ -1,0 +1,16 @@
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  box-sizing: border-box;
+  padding: 16px 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .character-list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}

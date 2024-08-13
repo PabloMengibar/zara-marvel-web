@@ -1,0 +1,32 @@
+.results-display {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.wrapper-characters {
+  padding: 0 48px;
+}
+
+.results-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.loading-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper-characters {
+    padding: var(--content-padding-mobile);
+  }
+}

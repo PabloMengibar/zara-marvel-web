@@ -1,0 +1,10 @@
+.favorite-icon {
+  transition: fill 0.3s ease, stroke 0.3s ease;
+  fill: none;
+  stroke: var(--white);
+}
+
+.favorite-icon.active {
+  fill: var(--marvel-red);
+  stroke: none;
+}

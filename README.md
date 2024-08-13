@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+## Proyecto Zara Web Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Introducción
 
-## Available Scripts
+Este proyecto es una aplicación web desarrollada con React, diseñada para explorar y gestionar información sobre personajes y cómics de Marvel. La aplicación permite a los usuarios buscar personajes, ver detalles específicos, y marcar sus favoritos.
 
-In the project directory, you can run:
+Requisitos Previos
+Antes de ejecutar la aplicación, asegúrate de tener instaladas las siguientes herramientas:
 
-### `npm start`
+`Node.js (versión 20.15.0 o superior)`
+`npm (versión 8.0.0 o superior)`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Instalación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Sigue estos pasos para instalar y configurar el proyecto en tu máquina local:
 
-### `npm test`
+1- Clona el repositorio desde GitHub:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`git clone https://github.com/PabloMengibar/zara-marvel-web.git`
 
-### `npm run build`
+2- Accede al directorio del proyecto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`cd zara-web-challenge`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3- Instala las dependencias necesarias:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install`
 
-### `npm run eject`
+# Ejecución
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para iniciar la aplicación en modo de desarrollo, usa el siguiente comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm run start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esto abrirá la aplicación en [http://localhost:3000]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para construir la aplicación para producción, ejecuta:
 
-## Learn More
+`npm run build`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para ejecutar los test de la aplicación puedes utilizar:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm run test`
 
-### Code Splitting
+# Arquitectura y Estructura del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+El proyecto sigue la estructura estándar de una aplicación creada con create-react-app. A continuación se describe la organización principal de carpetas y archivos dentro del directorio src:
 
-### Analyzing the Bundle Size
+assets/:
+    img/:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+components/: 
+    CharacterCard/
+    CharacterInfo/
+    CharacterList/
+    ComicList/
+    FavoriteButton/
+    FavoriteIcon/
+    Header/
+    Layout/: 
+    LoadingSpinner/: 
+    ResultsDisplay/
+    SearchBar/
+    context/: 
+        FavoritesContext.js
+hooks/: 
+    useCharacterDetails.js
+    useCharacters.js
+pages/:
+    CharacterDetailsPage.js
+    CharacterListPage.js
+services/: 
+    api.js
+styles/: 
+    main.css
 
-### Making a Progressive Web App
+# Dependencias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Las principales dependencias utilizadas en este proyecto son:
 
-### Advanced Configuration
+react: Biblioteca principal para la construcción de la interfaz de usuario.
+react-dom: Proporciona métodos específicos para el DOM en las aplicaciones React.
+react-router-dom: Utilizado para la navegación en la aplicación.
+dotenv: Carga variables de entorno desde un archivo .env.
+md5: Biblioteca para generar hashes MD5.
+Las dependencias de desarrollo incluyen herramientas para pruebas unitarias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+jest: Marco de pruebas en JavaScript.
+@testing-library/react: Utilidades para probar componentes de React.
+jest-fetch-mock: Mocking de fetch para pruebas.
 
-### Deployment
+# Variables de Entorno
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Debido a la naturaleza del proyecto, he dejado un archivo [.env.example] en la raíz del repositorio que incluye una clave API gratuita para aquellos que no tengan acceso a una clave propia o no dispongan de una.
 
-### `npm run build` fails to minify
+Para utilizar estas variables, simplemente copia el archivo .env.example, renómbralo a .env, y las claves se cargarán automáticamente en tu entorno de desarrollo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nota: Ten en cuenta que, al ser una clave abierta y compartida, es posible que las peticiones a la API de Marvel estén limitadas o agotadas debido a un uso excesivo. Se recomienda generar y utilizar una clave API personal para evitar estas limitaciones.
+
+# Advertencia
+Importante: En las últimas semanas, varios usuarios han reportado en diferentes foros que la API de Marvel está funcionando de manera extremadamente lenta. Esto puede afectar significativamente los tiempos de carga y la experiencia de usuario en la aplicación.
+
+Si experimentas tiempos de respuesta largos o fallos en las peticiones, ten en cuenta que esto podría estar relacionado con problemas de rendimiento en la API de Marvel y no con el código de la aplicación en sí.
+
+Es recomendable monitorear los tiempos de respuesta y, si es necesario, implementar soluciones como caché o limitación de peticiones para mitigar estos problemas.

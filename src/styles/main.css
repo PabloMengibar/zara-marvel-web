@@ -1,0 +1,53 @@
+:root {
+  /* colors */
+  --marvel-red: #EC1D24;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #D9D9D9;
+  --dark-gray: #333333;
+  --light-gray: #828282;
+  --off-white: rgb(255, 255, 255);
+  
+  /* fonts */
+  --font-roboto-condensed: 'Roboto Condensed', sans-serif;
+  
+  /* sizes */
+  --card-width: 188.57px;
+  --card-height: 245.97px;
+  --card-image-height: 189.97px;
+  --card-info-height: 56px;
+  --corner-cut-size: 12.86px;
+  --character-image-size: 320px;
+  --spinner-size: 50px;
+  --spinner-border-width: 5px;
+  
+  /* layout */
+  --max-content-width: 960px;
+  --header-padding: 12px 48px;
+  --content-padding: 48px;
+  --content-padding-mobile: 16px;
+  
+  /* icons */
+  --icon-width: 24px;
+  --icon-height: 21.68px;
+  
+  /* animations */
+  --spin-animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-roboto-condensed);
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
